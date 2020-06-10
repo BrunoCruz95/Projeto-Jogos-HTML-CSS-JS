@@ -1,1 +1,1 @@
-# Projeto-Jogo-Cobrinha-JavaScript
+# Jogo da Cobrinha
