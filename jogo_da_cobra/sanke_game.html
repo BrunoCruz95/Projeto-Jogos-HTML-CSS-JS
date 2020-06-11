@@ -8,14 +8,15 @@
 <body>
 
     <center>
-        <h1>PONTUAÇÃO </h1>
-        <h1>RECORDE </h1>
+        <h1>PONTUAÇÃO: </h1>
+        <h1>RECORDE: </h1>
 
         <canvas id="stage" width="600" height="600"></canvas>
         <script type="text/javascript">
+            
             var pontuacao = 0;
-            window.onload = function () {
 
+            window.onload = function () {
                 var stage = document.getElementById('stage');
                 var ctx = stage.getContext("2d");
                 document.addEventListener("keydown", keyPush);
@@ -36,6 +37,7 @@
                 tamanhoCobra = 1;
 
                 function jogo() {
+
                     pontoX += velocidadeX;
                     pontoY += velocidadeY;
                     if (pontoX < 0) {
@@ -82,7 +84,6 @@
                     while (rastro.length > tamanhoCobra) {
                         rastro.shift();
                     }
-
                     if (posicaoMacaX == pontoX && posicaoMacaY == pontoY) {
                         tamanhoCobra++;
                         pontuacao++;
@@ -127,6 +128,7 @@
                             break;
                     }
                 }
+
             }
         </script>
 
